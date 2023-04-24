@@ -1,0 +1,631 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    color: #0A0D4E;
+}
+
+/* -------- scrollbar -------- */
+
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+   
+  body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  }
+   
+  body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+    border-radius: 4px;
+  }
+
+/* -------- scrollbar -------- */
+
+
+ul{list-style-type: none;}
+a{text-decoration: none;}
+
+h1{
+    font-weight: 700;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: minmax(40px, 64px);
+    text-align: center;
+    
+    background: linear-gradient(90deg, #28CBFF 0%, #0AE8C2 100%), #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    letter-spacing: 0px;
+
+}
+
+h2{
+    font-size: 32px;
+    line-height: 36px;
+}
+
+h3{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+:root {
+    --main-bg-color: #fff;
+    --body_18: 18px;
+    --body_16: 16px;
+    --body_14: 14px;
+    --body_12: 12px;
+ }
+
+
+/* -------- Landing CSS -------- */
+/* -------- Landing CSS -------- */
+/* -------- Landing CSS -------- */
+/* -------- Landing CSS -------- */
+
+body{
+    background-color: var(--main-bg-color);
+}
+
+.grid{
+    width: 100%;
+    /* height: auto; */
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(12, 80px);
+    /* grid-template-columns: repeat(12, minmax(64px, 80px)); */
+    /* grid-template-columns: repeat(12, 1fr); */
+    grid-column-gap: 20px;
+
+    padding: 0 24px;
+    gap: 156px 0;
+    box-sizing: border-box;
+}
+
+
+/* -------- Header -------- */
+/* -------- Header -------- */
+
+header{
+    width: 100%;
+    border-bottom: 1px #E6E6E6 solid;
+
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+    max-height: 64px;
+    background-color: white;
+
+    grid-column: 1 / 13;
+}
+
+header ul{
+    display: flex;
+    gap: 24px;
+}
+
+/* -------- Section Main -------- */
+/* -------- Section Main -------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 400px;
+    /* margin-top: 80px; */
+
+    grid-column: 1 / 13;
+    /* border: 1px red solid; */
+}
+
+.main__subtitle{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* -------- CIRCULOS -------- */
+/* -------- CIRCULOS -------- */
+
+.circulos{
+    margin-top: -600px;
+    margin-bottom: -360px;
+    position: relative;
+    width: 1024px;
+    min-height: 1080px;
+    z-index: -1;
+    filter: opacity(.18);
+    overflow: hidden;
+    /* border: 1px red solid; */
+}
+
+
+#orbita-01{
+    width: 400px;
+    height: 400px;
+
+    position: absolute;
+    top: 312px;
+    left: 312px;
+    border: 2px #4A437F dashed;
+    border-radius: 100%;
+    
+    -webkit-animation: spin-right 24s linear infinite;
+    animation: spin-right 24s linear infinite;
+  }
+
+  #orbita-02 {
+    width: 600px;
+    height: 600px;
+
+    position: absolute;
+    top: 212px;
+    left: 212px;
+    border: 2px #4A437F dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 32s linear infinite;
+    animation: spin-right 32s linear infinite;
+  }
+
+  #orbita-03 {
+    width: 800px;
+    height: 800px;
+
+    position: absolute;
+    top: 112px;
+    left: 112px;
+    border: 2px #4A437F dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 60s linear infinite;
+    animation: spin-right 60s linear infinite;
+  }
+  #orbita-04 {
+    width: 1024px;
+    height: 1024px;
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border: 2px #4A437F dashed;
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 75s linear infinite;
+  }
+  
+  /* ---------- Iconos de los circulos ---------- */
+  .icono-01 {
+    position: absolute;
+    top: 162px;
+    left: -16px;
+    height: 32px;
+    width: 32px;
+    border-radius: 100%;
+    animation: iconos 24s infinite linear;  
+  }
+  
+  .icono-02 {
+    position: absolute;
+    top: 320px;
+    left: -16px;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    animation: iconos 32s infinite linear;  
+  }
+  
+  .icono-03 {
+    position: absolute;
+    top: 320px;
+    left: -28px;
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+    animation: iconos 60s infinite linear;  
+  }
+
+  .icono-04 {
+    position: absolute;
+    top: 388px;
+    left: -36px;
+    height: 72px;
+    width: 72px;
+    border-radius: 100%;
+    animation: iconos 75s infinite linear;  
+  }
+
+  .icono-05 {
+    position: absolute;
+    top: 388px;
+    right: -36px;
+    height: 72px;
+    width: 72px;
+    border-radius: 100%;
+    animation: iconos 75s infinite linear;  
+  }
+
+  .icono-06 {
+    position: absolute;
+    top: 388px;
+    right: -28px;
+    height: 56px;
+    width: 56px;
+    border-radius: 100%;
+    animation: iconos 60s infinite linear;  
+  }
+  
+    
+  /* ---------- Animations ---------- */
+  /* ---------- Animations ---------- */
+  
+  @keyframes iconos {
+      from {-webkit-transform: rotateZ(360deg)}
+      to {-webkit-transform: rotateZ(0deg)}
+  }
+  
+  @keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+
+
+
+
+
+/* -------- Section Beneficios -------- */
+/* -------- Section Beneficios -------- */
+
+.beneficios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    grid-column: 2 / 12;
+}
+
+.beneficios__cards-container{
+    display: flex;
+    gap: 28px;
+}
+
+.beneficios__card{
+    box-sizing: border-box;
+    width: 264px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E6E6E6;
+    box-shadow: 0px 0px 36px rgba(26, 43, 50, 0.12);
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 16px;
+    gap: 8px;
+}
+
+.beneficios__card-description{
+    font-size: var(--body_14);
+    text-align: center;
+}
+
+
+/* -------- Section como-funciona -------- */
+/* -------- Section como-funciona -------- */
+
+.como-funciona{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    grid-column: 1 / 13;
+    /* border: 1px red solid; */
+}
+.como-funciona__container{
+    display: flex;
+    gap: 24px;
+
+}
+
+.como-funciona__container > img{
+    max-width: 40%;
+
+}
+
+.como-funciona__stepper{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    position: relative;
+}
+
+.como-funciona__card{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.como-funciona__line{
+    background-color: #60C6FF;
+    width: 2px;
+    height: 75%;
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    z-index: -1;
+}
+
+
+/* -------- CTA -------- */
+/* -------- CTA -------- */
+
+.CTA{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+    
+    padding: 40px 32px;
+    background: #60C6FF;
+    border-radius: 16px;
+
+    grid-column: 1 / 13;
+}
+
+.CTA__text-container{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.CTA__title{
+    font-weight: 700;
+}
+
+.CTA__description{
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.CTA__button{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    
+    width: 220px;
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px;
+    background-color: #0A0D4E;
+    border-radius: 16px;
+}
+
+.CTA__button:hover{
+    transition: 0.25s ease-in-out;
+    background-color: #1B4F9C;
+}
+
+.CTA > img{
+    max-width: 25%;
+}
+
+
+/* -------- SECTION FAQ -------- */
+/* -------- SECTION FAQ -------- */
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    grid-column: 2 / 12;
+}
+
+.faq__cards-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: 0 3px 10px #0003;
+    border-radius: 8px;
+}
+
+
+details > summary {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    font-size: var(--body_18);
+    font-weight: bold;
+    padding: 8px 24px;
+    /* border: 1px red solid; */
+  }
+  
+  details > p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px;
+  }
+  
+  details > summary:hover {
+    background: #f4f4f4;
+  }
+  
+  
+  details:not(:first-of-type) > summary {
+    border-top: 1px solid #ddd;
+  }
+  
+
+/* -------- FOOTER -------- */
+/* -------- FOOTER -------- */
+
+footer{
+    width: 100%;
+    background: #EAEEF2;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    box-sizing: border-box;
+
+    margin-top: 156px;
+
+}
+
+footer p, a{
+    color: #747C87;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer ul{
+    display: flex;
+    gap: 24px;
+}
+
+
+
+/* -------- BREAKPOINTS -------- */
+/* -------- BREAKPOINTS -------- */
+/* -------- BREAKPOINTS -------- */
+/* -------- BREAKPOINTS -------- */
+
+
+/* -------- TABLET -------- */
+/* -------- TABLET -------- */
+@media only screen and (max-width: 1024px) {
+
+.grid{
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 20px;
+}
+
+header{
+    grid-column: 1 / 9;
+}
+
+main{
+    grid-column: 1 / 9;
+    overflow: hidden;
+}
+
+.beneficios{
+    grid-column: 1 / 9;
+}
+
+.como-funciona{
+    grid-column: 1 / 9;
+}
+
+.como-funciona__container > img{
+    max-width: 33%;
+}
+
+.CTA{
+    grid-column: 1 / 9;
+}
+
+.faq{
+    grid-column: 1 / 9;
+}
+
+
+}
+
+/* -------- MOBILE -------- */
+/* -------- MOBILE -------- */
+@media only screen and (max-width: 860px) {
+
+header nav{
+    display: none;
+}
+
+.grid{
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 20px;
+}
+
+header{
+    grid-column: 1 / 5;
+}
+
+main{
+    grid-column: 1 / 5;
+    overflow: hidden;
+}
+
+.beneficios{
+    grid-column: 1 / 5;
+}
+
+.beneficios h2{
+    text-align: center;
+}
+
+.beneficios__cards-container{
+    flex-direction: column;
+    align-items: center;
+}
+
+.beneficios__card{
+    box-sizing: border-box;
+    width: 80%;
+    align-self: center;
+}
+
+.beneficios__card-description{
+    font-size: var(--body_16);
+}
+
+.como-funciona{
+    grid-column: 1 / 5;
+}
+
+.como-funciona__container > img{
+    display: none;
+}
+
+.CTA{
+    grid-column: 1 / 5;
+}
+
+.CTA img{
+    display: none;
+}
+
+.faq{
+    grid-column: 1 / 5;
+}
+
+footer{
+    justify-content: center;
+}
+
+footer > ul{
+    display: none;
+}
+
+footer > p{
+    display: none;
+}
+
+
+}
